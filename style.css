@@ -10,6 +10,7 @@ body {
 	height:40px;
 	color:#fafafa;
 	position:fixed;
+	z-index:1000;
 	width:100%;
 	top:0;
 }
@@ -40,7 +41,6 @@ body {
 	font-size:16px;
 }
 .icon {
-	color:#fafafa;
 	font-size:16px;
 	line-height:40px;
 	margin-right:5px;
@@ -50,21 +50,24 @@ body {
 .flaticon-square234 {
 	font-size:14px;
 }
-a:hover {
+.inner-nav a:hover, .mark a:hover {
 	border-bottom:2px solid #629f15;
 }
 .header{
-	top:40px;
+	margin-top:40px;
 	text-align:center;
 	height:300px;
 	font-size:36px;
 	background:url('model.jpg') no-repeat no-repeat center;
 	background-size:cover;
 	text-transform:capitalize;
-	color:#fafafa;
 	font-weight:700;
-	line-height:300px;
 	letter-spacing:1px;
+}
+.tagline{
+	padding-top:100px;
+	line-height:50px;
+	color:#fafafa;
 }
 .example-heading {
 	height:100px;
@@ -73,6 +76,17 @@ a:hover {
 	font-weight:700;
 	color:#333;	
 }
+.copy-icon {
+	font-size:24px;
+	float:right;
+	margin-right:50px;
+	text-decoration:none;
+	color:#222;
+	transition:all 0.5s ease;
+}
+.copy-icon:hover {
+	color:#629f15;
+}	
 .code {
 	margin:40px 0 40px 7%;
 	float:left;
@@ -89,11 +103,6 @@ a:hover {
 .image{
 	text-align:center;
 	margin-top:10%;
-}
-.footer {
-	height:200px;
-	background:#222;
-	clear:both;
 }
 .room {
 	height:50px;
@@ -133,11 +142,26 @@ a:hover {
 	max-width:300px;
 	max-height:250px;
 }
-
-@media screen and (min-width: 980px) {
-
-	
-
+.social-icons{
+	width:250px;
+	margin:auto;
+}
+.footer {
+	height:100px;
+	background:#222;
+	clear:both;
+}
+.footer-icon{
+	font-size:48px;
+	line-height:100px;
+	color:#fafafa;
+}
+.social-icons a{
+	text-decoration:none;
+	transition:all 0.5s ease;	
+}
+.social-icons a:hover{
+	color:#629f15;
 }
 
 @media screen and (max-width: 668px) {
@@ -146,6 +170,7 @@ a:hover {
 	}
 	.mark a{
 		float:none;
+		display:block;
 		clear:both;
 		margin:0;
 		text-align:center;
@@ -156,10 +181,8 @@ a:hover {
 		width:350px;
 		margin:auto;
 	}
-
-}
-
-@media screen and (min-width: 320px) {
-
+	.code {
+		margin-left:10px;
+	} 
 
 }

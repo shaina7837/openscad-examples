@@ -13,15 +13,27 @@
 	font-family: Flaticon;
 font-style: normal;
 margin-left: 20px;
-}.flaticon-github7:before {
+}.flaticon-copy26:before {
 	content: "\e000";
 }
-.flaticon-home168:before {
+.flaticon-facebook3:before {
 	content: "\e001";
 }
-.flaticon-rectangular4:before {
+.flaticon-github7:before {
 	content: "\e002";
 }
-.flaticon-square234:before {
+.flaticon-google-plus:before {
 	content: "\e003";
+}
+.flaticon-home168:before {
+	content: "\e004";
+}
+.flaticon-logo22:before {
+	content: "\e005";
+}
+.flaticon-rectangular4:before {
+	content: "\e006";
+}
+.flaticon-square234:before {
+	content: "\e007";
 }
