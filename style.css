@@ -75,6 +75,7 @@ body {
 	font-size:36px;
 	font-weight:700;
 	color:#333;	
+	margin-left:20px;
 }
 .copy-icon {
 	font-size:24px;
@@ -93,9 +94,6 @@ body {
 	background:#fff;
 	border:1px solid #ddd;
 }
-.example-heading {
-	margin-left:20px;
-}
 .program img{
 	margin-left:0;
 	padding:0;
@@ -111,6 +109,7 @@ body {
 	font-size:36px;
 	font-weight:400;
 	margin:0 0 0 20px;
+	clear:both;
 }
 .cover{
 	float:left;
@@ -183,6 +182,8 @@ body {
 	}
 	.code {
 		margin-left:10px;
-	} 
-
+	}
+	.room {
+		height:90px;
+	} 	
 }
