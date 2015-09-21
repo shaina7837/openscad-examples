@@ -22,7 +22,6 @@ body {
 	font-weight:700;
 	color:#fafafa;
 	text-decoration:none;
-	
 }
 .mark span{
 	color:#629f15;
@@ -171,8 +170,8 @@ body {
 		float:none;
 		display:block;
 		clear:both;
-		margin:0;
-		text-align:center;
+		width:110px;
+		margin:auto;	
 	}	
 	.inner-nav{
 		clear:both;
