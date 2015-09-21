@@ -16,7 +16,7 @@ body {
 .mark a{
 	float:left;
 	line-height:40px;
-	margin:0 0 0 100px;
+	margin:0 0 0 8%;
 	font-size:24px;
 	font-weight:700;
 	color:#fafafa;
@@ -74,7 +74,7 @@ a:hover {
 	color:#333;	
 }
 .code {
-	margin:40px 0 40px 70px;
+	margin:40px 0 40px 7%;
 	float:left;
 	background:#fff;
 	border:1px solid #ddd;
@@ -146,12 +146,14 @@ a:hover {
 	}
 	.mark a{
 		float:none;
+		clear:both;
 		margin:0;
 		text-align:center;
 	}	
 	.inner-nav{
 		clear:both;
-		width:300px;
+		float:none;
+		width:350px;
 		margin:auto;
 	}
 
