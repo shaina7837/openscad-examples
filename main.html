@@ -4,10 +4,9 @@
   <link rel="stylesheet" href="myicons/flaticon.css" />
   <link rel="stylesheet" href="style.css" />
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,500,600,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700,900,300italic' rel='stylesheet' type='text/css'>
+  <link href="rainbow-dev-custom/themes/solarized-light.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -27,15 +26,49 @@
   <div class="code">
     <div class="example-heading">
 	Logo.scad
-	<a class="copy-icon flaticon-copy26" href="#"></a>
+
+	<a class="copy-icon" href="#">
+		<img src="logo.png">
+	</a>
     </div> 
-    <div class="program">
-        <img src="images/code.png">
-    </div>
+<pre><code data-language="c" data-line="1">// logo.scad - Basic example of module, top-level variable and $fn usage
+
+Logo(50);
+
+// The $fn parameter will influence all objects inside this module
+// It can, optionally, be overridden when instantiating the module
+module Logo(size=50, $fn=100) {
+    // Temporary variables
+    hole = size/2;
+    cylinderHeight = size * 1.25;
+
+    // One positive object (sphere) and three negative objects (cylinders)
+    difference() {
+        sphere(d=size);
+        
+        cylinder(d=hole, h=cylinderHeight, center=true);
+        // The '#' operator highlights the object
+        #rotate([90, 0, 0]) cylinder(d=hole, h=cylinderHeight, center=true);
+        rotate([0, 90, 0]) cylinder(d=hole, h=cylinderHeight, center=true);
+    }
+}
+
+echo(version=version());
+// Written by Clifford Wolf <clifford@clifford.at> and Marius
+// Kintel <marius@kintel.net>
+//
+// To the extent possible under law, the author(s) have dedicated all
+// copyright and related and neighboring rights to this software to the
+// public domain worldwide. This software is distributed without any
+// warranty.
+//
+// You should have received a copy of the CC0 Public Domain
+// Dedication along with this software.
+// If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+</code></pre>
   </div>
-  <div class="image">
-	<img src="logo.png">
-  </div><!--image-->
+
   <div class="footer">
 	<div class = "social-icons">
 	<a class = "footer-icon flaticon-facebook3" href="#"></a>
@@ -43,6 +76,10 @@
 	<a class = "footer-icon flaticon-logo22" href="#"></a>
 	</div>
   </div>
+<script src="rainbow-dev-custom/rainbow.js"></script>
+<script src="rainbow-dev-custom/rainbow-linenumbers.js"></script>
+<script src="rainbow-dev-custom/language/generic.js"></script>
+<script src="rainbow-dev-custom/language/c.js"></script>
 </body>
 </html>
 

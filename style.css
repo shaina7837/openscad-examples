@@ -69,33 +69,24 @@ body {
 	color:#fafafa;
 }
 .example-heading {
-	height:100px;
-	line-height:90px;
+	height:120px;
+	line-height:120px;
 	font-size:36px;
 	font-weight:700;
 	color:#333;	
 	margin-left:20px;
 }
-.copy-icon {
-	font-size:24px;
+.copy-icon img{
 	float:right;
-	margin-right:50px;
-	text-decoration:none;
-	color:#222;
-	transition:all 0.5s ease;
+	width:100px;
+	height:100px;
+	margin:10px 50px 0 0;
 }
-.copy-icon:hover {
-	color:#629f15;
-}	
 .code {
-	margin:40px 0 40px 7%;
-	float:left;
+	margin:40px auto auto auto;
 	background:#fff;
 	border:1px solid #ddd;
-}
-.program img{
-	margin-left:0;
-	padding:0;
+	width:60%;
 }
 .image{
 	text-align:center;
@@ -117,7 +108,7 @@ body {
 	margin:20px 0 20px 20px;
 	background:#333;
 }
-.label{
+.ex-label{
 	z-index:100;
 	width:300px;
 	height:250px;
@@ -133,7 +124,7 @@ body {
 	text-transform:uppercase;
 	letter-spacing:1px;
 }
-.label:hover{
+.ex-label:hover{
 	opacity:0.8;
 }
 .cover img{
@@ -147,7 +138,11 @@ body {
 .footer {
 	height:100px;
 	background:#222;
+	margin-top:40px;
 	clear:both;
+	width:100%;
+	bottom:0px;
+	top:100%;
 }
 .footer-icon{
 	font-size:48px;
@@ -161,7 +156,9 @@ body {
 .social-icons a:hover{
 	color:#629f15;
 }
-
+span .entity, span .label { 
+	height:0;
+}
 @media screen and (max-width: 668px) {
 	.nav {
 		height:80px;
