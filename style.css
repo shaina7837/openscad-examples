@@ -177,7 +177,7 @@ span .entity, span .label {
 		margin:auto;
 	}
 	.code {
-		margin-left:10px;
+		width:90%;
 	}
 	.room {
 		height:90px;
